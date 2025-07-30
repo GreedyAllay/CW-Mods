@@ -88,7 +88,7 @@
         padding: 20px ;
     }
     .subtext {
-        color: gray;
+        color: rgb(196, 196, 196);
         font-size: 15px;
     }
     .boldtext {
@@ -100,6 +100,25 @@
     }
         #older-versions {
             display: none;
+        }
+        .cardtitle {
+            font-size: 20px;
+            font-family: Archivo Black;
+            color: white;
+            margin-bottom: -10px;
+            ,margin-top: -5px;
+        }
+        .card {
+        background-color: rgb(54, 54, 54);
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .card:active {
+            transform: scale(0.96);
+        }
+        .card:hover {
+            cursor: pointer;
         }
 </style>
 <body>
@@ -115,5 +134,10 @@
 
         <div>
             <div class="news"><p class="big">User Mods</p><br><p class="text">
+                <div class="card" onclick="window.open('https://mods.cattiesworld.nl/mods/headless.html')">
+                    <p class="cardtitle">Cattie's World: HEADLESS</p>
+                    <p class="subtext">alfo randomizer</p>
+                    <img src="banners/headless.png" width="300px">
+                </div>
                 
 </body>
